@@ -78,3 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleBtn.classList.toggle('fa-sun');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
